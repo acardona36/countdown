@@ -1,0 +1,16 @@
+def countdown(n):
+     if n == 0:
+          print('Blastoff!')
+     else:
+          print(n)
+          countdown(n-1) #subtract 1 from n until it reaches 0
+
+
+def countup(n):
+    if n < 0:
+        print(n)
+        countup(n+1) #add 1 to n until it reaches 0
+    else:
+        countdown(n) #call countdown function if number is not less than 0
+
+countup(int(input("What number?"))) #convert input to an integer value and call countup function
